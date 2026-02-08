@@ -67,9 +67,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
-# VINTF
-DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/vintf/device_framework_matrix_product.xml
-
 # Window extensions
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
