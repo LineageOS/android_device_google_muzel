@@ -1,4 +1,1 @@
-blocklist qbt_handler
-blocklist heatmap
-blocklist goog_touch_interface
-blocklist syna_touch
+blocklist focal_touch
