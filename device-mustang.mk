@@ -11,10 +11,6 @@ TARGET_KERNEL_DEVICE := muzel
 TARGET_KERNEL_DIR := device/google/$(TARGET_KERNEL_DEVICE)-kernels/$(TARGET_LINUX_KERNEL_VERSION)
 TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
 
-ifneq ($(TARGET_BOOTS_16K),true)
-PRODUCT_16K_DEVELOPER_OPTION := true
-endif
-
 # Inherit from laguna
 include device/google/laguna/device-shipping-common.mk
 
