@@ -27,7 +27,6 @@ persist.bluetooth.thread_dispatcher.enabled=false
 persist.bluetooth.vendor.btsnoop=false
 persist.vendor.audio.leaudio_sw_offload=true
 persist.vendor.bluetooth.bluetooth_hal.enabled=true
-ro.bluetooth.finder.supported=true
 ro.bluetooth.leaudio_offload.supported=true
 ro.bluetooth.leaudio_switcher.supported=true
 

@@ -1,14 +1,15 @@
-# AOC
-persist.vendor.aoc.firmware.disable_monitor_mode=true
-
 # Audio
 persist.vendor.app.audio.gsenet.version=1
 persist.vendor.audio.cca.enabled=false
+persist.vendor.audio.force.fm.enabled=false
+persist.vendor.audio.spatializer.speaker_enabled=true
 ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-opus
 persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bluetooth.thread_dispatcher.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.evb_bdaddr=22:22:22:33:44:55
 
@@ -17,24 +18,26 @@ persist.vendor.camera.allow_external_binning_setting=true
 persist.vendor.camera.exif_reveal_make_model=true
 persist.vendor.camera.front_720P_always_binning=true
 persist.vendor.camera.ois_with_system_imu=true
+ro.camera.notify_nfc=1
 
 # DCK
 ro.gms.dck.eligible_wcc=3
 ro.gms.dck.se_capability=1
 
 # Display
-persist.vendor.display.primary.boot_config=960x2142@120:120
 ro.surface_flinger.ignore_hdr_camera_layers=true
-ro.vendor.primarydisplay.blocking_zone.min_refresh_rate_by_nits=5:120,:1
-ro.vendor.primarydisplay.preferred_mode=960x2142@120:120
-ro.vendor.primarydisplay.vrr.expected_present.headsup_ns=30000000
-ro.vendor.primarydisplay.vrr.expected_present.timeout_ns=500000000
+ro.vendor.display.ambience.enable=true
+ro.vendor.display.ambience.idle_timeout_ms=100
+ro.vendor.primarydisplay.preferred_mode=1080x2410x120@120
+ro.vendor.primarydisplay.thermal.skin_temperature_worker_period_ms=30000
+ro.vendor.primarydisplay.xrr.blocking_zone.min_refresh_rate_by_nits=5:120
+ro.vendor.primarydisplay.xrr.feat_present_timeout_enabled=true
+ro.vendor.primarydisplay.xrr.feat_refresh_rate_throttling_enabled=true
+ro.vendor.primarydisplay.xrr.has_proximity_sensor=true
 ro.vendor.primarydisplay.xrr.version=2.1
-vendor.display.0.brightness.acl.default=1
+ro.vendor.primarydisplay.xrr.vrr_expected_present.headsup_ns=30000000
+ro.vendor.primarydisplay.xrr.vrr_expected_present.timeout_ns=500000000
 vendor.display.lbe.supported=1
-vendor.primarydisplay.fixed_te2.default_rate_hz=120
-vendor.primarydisplay.op.hs_hz=120
-vendor.primarydisplay.op.ns_hz=120
 
 # DRM
 drm.service.enabled=true
@@ -51,6 +54,7 @@ persist.vendor.udfps.lhbm_controlled_in_hal_supported=true
 
 # GPS
 persist.vendor.gps.hal.service.name=vendor
+persist.vendor.gps.indoor.enabled=true
 ro.vendor.gps.atom.enabled=true
 ro.vendor.gps.pps.enabled=true
 
@@ -60,14 +64,11 @@ ro.odm.build.media_performance_class=35
 # PKVM
 hypervisor.memory_reclaim.supported=1
 
-# Power
-vendor.powerhal.apf_disabled=false
-vendor.powerhal.apf_enabled=true
-
 # Radio
 persist.vendor.ril.ecc.use.xml=1
+persist.vendor.ril.radioexternal_hal_type=aidl
 persist.vendor.ril.support_nr_ds=1
-persist.vendor.ril.use_radio_hal=2.1
+persist.vendor.ril.use_radio_hal=2.2
 ro.vendor.config.build_carrier=europen
 vendor.rild.libpath=libsitril.so
 
@@ -75,18 +76,25 @@ vendor.rild.libpath=libsitril.so
 persist.device_config.configuration.disable_rescue_party=true
 
 # SVN
-ro.vendor.build.svn=49
+ro.vendor.build.svn=29
+
+# Touch
+ro.vendor.touch.gti0.resample_latency.enabled=true
+ro.vendor.touch.gti0.resample_latency_us=7000
 
 # USB
+ro.usb.data_protection.disable_when_locked.supported=true
 ro.usb.uvc.enabled=true
 
 # Vibrator
-persist.vendor.vibrator.hal.context.cooldowntime=1600
-persist.vendor.vibrator.hal.context.enable=false
-persist.vendor.vibrator.hal.context.fade=true
-persist.vendor.vibrator.hal.context.scale=60
-persist.vendor.vibrator.hal.context.settlingtime=5000
-ro.vendor.vibrator.hal.chirp.enabled=1
-ro.vendor.vibrator.hal.device.mass=0.222
-ro.vendor.vibrator.hal.loc.coeff=2.8
+persist.vendor.vibrator.hal.pwle.frequency.min_hz=50.0
+persist.vendor.vibrator.hal.pwle.v2_supported=1
+ro.vendor.vibrator.hal.bl.factor=1.1
+ro.vendor.vibrator.hal.damping.q.factor=9.27
+ro.vendor.vibrator.hal.device.mass=0.208
+ro.vendor.vibrator.hal.dvl.lra.f0.v=1.4
+ro.vendor.vibrator.hal.dvl.lra.non.f0.v=4.4
+ro.vendor.vibrator.hal.dvl.peq.coefficients=FF270,E007BB,100704,F0068C,1FF845,100000
+ro.vendor.vibrator.hal.dvl.q.factor=3
+ro.vendor.vibrator.hal.loc.coeff=3.279
 vendor.audio.hapticgenerator.distortion.output.gain=0.48
