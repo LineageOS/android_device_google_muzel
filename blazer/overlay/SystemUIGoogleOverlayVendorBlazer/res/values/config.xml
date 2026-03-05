@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Doze: Table that translates sensor values from the doze_brightness_sensor_type sensor
+           to an opacity value for a black scrim that is overlaid in AOD to darken the AOD
+           wallpaper.
+           Valid range is from 0 (transparent) to 255 (opaque).
+           -1 means keeping the current opacity. -->
+    <integer-array name="config_doze_brightness_sensor_to_wallpaper_scrim_opacity">
+        <item>-1</item>
+        <item>51</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <!-- A path similar to frameworks/base/core/res/res/values/config.xml
+      config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a outer
+      display cutout. If present as well as config_enableDisplayCutoutProtection is set to true,
+      then SystemUI will draw this "protection path" instead of the display cutout path that is
+      normally used for anti-aliasing.
+
+      This path will only be drawn when the front-facing camera turns on, otherwise the main
+      DisplayCutout path will be rendered
+       -->
+    <string name="config_frontBuiltInDisplayCutoutProtection">m 702,102 a 62,62 0 0 0 -124,0 62,62 0 0 0 124,0 z</string>
+</resources>

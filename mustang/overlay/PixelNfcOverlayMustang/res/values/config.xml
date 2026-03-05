@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- NFC Antenna Location API -->
+    <integer name="device_width">77</integer>
+    <integer name="device_height">162</integer>
+    <integer-array name="antenna_x">
+        <item>29</item>
+    </integer-array>
+</resources>

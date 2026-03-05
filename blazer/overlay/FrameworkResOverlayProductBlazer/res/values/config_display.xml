@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Indicate available EM_VALUE options -->
+    <integer-array name="config_availableEMValueOptions">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+</resources>

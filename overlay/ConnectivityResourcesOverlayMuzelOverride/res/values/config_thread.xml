@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Whether to enable or disable setting Thread country code from the telephony, wifi, location,
+     etc. The country code could be used by the Thread co-processor for setting the fixed output
+	 power of Thread radio. If the device needs to dynamically change the max output power according
+	 to the user scenario to meet the requirement of Specific Absorption Rate (SAR), it should call
+	 the API `setChannelMaxPowers()` to change the max output power, and this configuration could be
+	 set to false to disable the Thread service from setting the Thread country code.
+    -->
+    <bool name="config_thread_country_code_enabled">false</bool>
+</resources>

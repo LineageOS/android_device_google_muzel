@@ -16,25 +16,20 @@ include device/google/laguna/device-shipping-common.mk
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ConnectivityResourcesOverlayCaimitoOverride \
-    FrameworkResOverlayProductCaimito \
-    FrameworkResOverlayVendorCaimito \
-    PixelNfcOverlayCaimito \
-    PixelWifiOverlay2024Caimito \
-    SafetyRegulatoryInfoOverlayProductCaimito \
-    SettingsGoogleOverlayProductCaimito \
-    SystemUIGoogleOverlayVendorCaimito \
-    TeleServiceOverlayVendorCaimito \
-    TelecomOverlayProductCaimito
+    FrameworkResOverlayProductMuzel \
+    FrameworkResOverlayVendorMuzel \
+    PixelNfcOverlayMuzel \
+    SafetyRegulatoryInfoOverlayProductMuzel \
+    SystemUIGoogleOverlayVendorMuzel
 
 PRODUCT_PACKAGES += \
-    DMServiceOverlayVendorTokay \
-    FrameworkResOverlayVendorTokay \
-    PixelDisplayServiceOverlayProductTokay \
-    PixelNfcOverlayTokay \
-    SettingsGoogleOverlayVendorTokay \
-    SettingsTokayOverlay \
-    SystemUIGoogleOverlayVendorTokay
+    DMServiceOverlayVendorFrankel \
+    FrameworkResOverlayVendorFrankel \
+    PixelDisplayServiceOverlayProductFrankel \
+    PixelNfcOverlayFrankel \
+    PixelWifiOverlay2025_4383Frankel \
+    SettingsFrankelOverlay \
+    SystemUIGoogleOverlayVendorFrankel
 
 PRODUCT_PACKAGES += \
     ApertureOverlayFrankel
