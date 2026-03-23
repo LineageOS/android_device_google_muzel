@@ -85,8 +85,6 @@ bin/hw/android.hardware.security.keymint-service.rust.trusty
 bin/hw/android.hardware.security.secretkeeper.trusty
 bin/hw/android.hardware.sensors-service.multihal
 bin/hw/android.hardware.thermal-service.pixel
-bin/hw/android.hardware.usb-service
-bin/hw/android.hardware.usb.gadget-service
 bin/hw/android.hardware.wifi-service
 bin/hw/hostapd
 bin/hw/wpa_supplicant
@@ -278,8 +276,6 @@ etc/init/android.hardware.security.keymint-service.rust.trusty.rc
 etc/init/android.hardware.security.secretkeeper.trusty.rc
 etc/init/android.hardware.sensors-service-multihal.rc
 etc/init/android.hardware.thermal-service.pixel.rc
-etc/init/android.hardware.usb-service.rc
-etc/init/android.hardware.usb.gadget-service.rc
 etc/init/android.hardware.wifi-service.rc
 etc/init/android.hardware.wifi.supplicant-service.rc
 etc/init/atrace_categories.rc
@@ -384,8 +380,6 @@ etc/vintf/manifest/android.hardware.security.keymint-service.rust.trusty.xml
 etc/vintf/manifest/android.hardware.security.secretkeeper.trusty.xml
 etc/vintf/manifest/android.hardware.sensors-multihal.xml
 etc/vintf/manifest/android.hardware.thermal-service.pixel.xml
-etc/vintf/manifest/android.hardware.usb-service.xml
-etc/vintf/manifest/android.hardware.usb.gadget-service.xml
 etc/vintf/manifest/android.hardware.wifi-service.xml
 etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 etc/vintf/manifest/android.hardware.wifi.supplicant.xml

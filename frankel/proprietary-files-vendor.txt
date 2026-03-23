@@ -53,6 +53,8 @@ vendor/bin/hw/android.hardware.oemlock-service.citadel
 vendor/bin/hw/android.hardware.power.stats-service.pixel;REQUIRED=pixel_powerstats_xml
 vendor/bin/hw/android.hardware.secure_element-service.uicc
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
+vendor/bin/hw/android.hardware.usb-service
+vendor/bin/hw/android.hardware.usb.gadget-service
 vendor/bin/hw/android.hardware.vibrator-service.cs40l26
 vendor/bin/hw/android.hardware.weaver-service.citadel
 vendor/bin/hw/battery_mitigation
@@ -338,6 +340,8 @@ vendor/etc/init/android.hardware.oemlock-service.citadel.rc
 vendor/etc/init/android.hardware.power.stats-service.pixel.rc
 vendor/etc/init/android.hardware.secure_element-service.uicc.rc
 vendor/etc/init/android.hardware.security.keymint-service.citadel.rc
+vendor/etc/init/android.hardware.usb-service.rc
+vendor/etc/init/android.hardware.usb.gadget-service.rc
 vendor/etc/init/android.hardware.vibrator-service.cs40l26.rc
 vendor/etc/init/android.hardware.weaver-service.citadel.rc
 vendor/etc/init/aocd.rc
@@ -474,6 +478,8 @@ vendor/etc/vintf/manifest/android.hardware.gnss@lassen.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
 vendor/etc/vintf/manifest/android.hardware.oemlock-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.usb-service.xml
+vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.xml
 vendor/etc/vintf/manifest/android.hardware.vibrator-service.cs40l26.xml
 vendor/etc/vintf/manifest/android.hardware.weaver-service.citadel.xml
 vendor/etc/vintf/manifest/dmd.xml
