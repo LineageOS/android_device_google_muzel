@@ -46,6 +46,7 @@ vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
 vendor/bin/hw/android.hardware.gnss-service
 vendor/bin/hw/android.hardware.gnss-service.pixel
 vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
+vendor/bin/hw/android.hardware.health-service.laguna
 vendor/bin/hw/android.hardware.input.processor-service
 vendor/bin/hw/android.hardware.memtrack-service.pixel
 vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl
@@ -334,6 +335,7 @@ vendor/etc/init/android.hardware.contexthub-service.generic.rc
 vendor/etc/init/android.hardware.dumpstate.3-service.rc
 vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
 vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
+vendor/etc/init/android.hardware.health-service.laguna.rc
 vendor/etc/init/android.hardware.input.processor-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc
 vendor/etc/init/android.hardware.oemlock-service.citadel.rc
@@ -475,6 +477,7 @@ vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google-ap
 vendor/etc/vintf/manifest/android.hardware.contexthub-service.generic.xml
 vendor/etc/vintf/manifest/android.hardware.dumpstate.3-service.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@lassen.xml
+vendor/etc/vintf/manifest/android.hardware.health-service.laguna.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
 vendor/etc/vintf/manifest/android.hardware.oemlock-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.citadel.xml

@@ -76,7 +76,6 @@ bin/hostname
 bin/hw/android.hardware.boot-service.default-pixel
 bin/hw/android.hardware.drm-service.clearkey
 bin/hw/android.hardware.gatekeeper-service.trusty
-bin/hw/android.hardware.health-service.laguna
 bin/hw/android.hardware.health.storage-service.default
 bin/hw/android.hardware.nfc-service.st
 bin/hw/android.hardware.power-service.pixel-libperfmgr
@@ -269,7 +268,6 @@ etc/group
 etc/init/android.hardware.boot-service.default-pixel.rc
 etc/init/android.hardware.drm-service.clearkey.rc
 etc/init/android.hardware.gatekeeper-service.trusty.rc
-etc/init/android.hardware.health-service.laguna.rc
 etc/init/android.hardware.power-service.pixel-libperfmgr.rc
 etc/init/android.hardware.secure_element_gto.rc
 etc/init/android.hardware.security.keymint-service.rust.trusty.rc
@@ -373,7 +371,6 @@ etc/vintf/compatibility_matrix.xml
 etc/vintf/manifest.xml
 etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
 etc/vintf/manifest/android.hardware.gatekeeper-service.trusty.xml
-etc/vintf/manifest/android.hardware.health-service.laguna.xml
 etc/vintf/manifest/android.hardware.power-service.pixel.xml
 etc/vintf/manifest/android.hardware.secure_element_gto.xml
 etc/vintf/manifest/android.hardware.security.keymint-service.rust.trusty.xml
