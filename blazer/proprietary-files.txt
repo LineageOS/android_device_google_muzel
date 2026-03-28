@@ -210,6 +210,11 @@ system_ext/etc/init/init.gs_watchdogd.rc
 
 # recovery partition
 
+# Health HAL
 recovery/system/bin/hw/android.hardware.health-service.laguna_recovery
 recovery/system/etc/init/android.hardware.health-service.laguna_recovery.rc
 recovery/system/etc/vintf/manifest/android.hardware.health-service.laguna.xml:recovery/system/etc/vintf/manifest/android.hardware.health-service.laguna_recovery.xml
+
+# USB firmware
+recovery/lib/firmware/usb_phy_fw.bin
+recovery/lib/firmware/usb_phy_fw_2.27.0.bin
