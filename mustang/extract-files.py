@@ -39,10 +39,10 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
-        'com.google.edgetpu_app_service-V6-ndk',
+        'com.google.edgetpu_app_service-V10-ndk',
         'com.google.edgetpu_vendor_service-V2-ndk',
         'vendor.google.whitechapel.audio.audioext@4.0',
-        'vendor.google.whitechapel.audio.extension-V7-ndk',
+        'vendor.google.whitechapel.audio.extension-V8-ndk',
     ): lib_fixup_vendor_suffix,
 }
 
@@ -86,10 +86,10 @@ module = ExtractUtilsModule(
 
 def fix_vendor_file_list(file_list: FileList):
     module_suffix_file_paths = [
-        'vendor/lib64/com.google.edgetpu_app_service-V6-ndk.so',
+        'vendor/lib64/com.google.edgetpu_app_service-V10-ndk.so',
         'vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so',
         'vendor/lib64/vendor.google.whitechapel.audio.audioext@4.0.so',
-        'vendor/lib64/vendor.google.whitechapel.audio.extension-V7-ndk.so',
+        'vendor/lib64/vendor.google.whitechapel.audio.extension-V8-ndk.so',
     ]
 
     for file_path in module_suffix_file_paths:
