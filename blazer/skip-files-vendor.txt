@@ -305,7 +305,7 @@ etc/permissions/android.hardware.camera.raw.xml
 etc/permissions/android.hardware.context_hub.xml
 etc/permissions/android.hardware.device_unique_attestation.xml
 etc/permissions/android.hardware.fingerprint.xml
-etc/permissions/android.hardware.hardware_keystore.xml
+etc/permissions/android.hardware.hardware_keystore_V5.xml
 etc/permissions/android.hardware.keystore.app_attest_key.xml
 etc/permissions/android.hardware.nfc.ese.xml
 etc/permissions/android.hardware.nfc.hce.xml
@@ -543,8 +543,8 @@ lib64/libpixelhealth.so
 lib64/libpng.so
 lib64/libpower.so
 lib64/libprocessgroup.so
-lib64/libprotobuf-cpp-full-4.25.8.so
-lib64/libprotobuf-cpp-lite-4.25.8.so
+lib64/libprotobuf-cpp-full-6.33.5.so
+lib64/libprotobuf-cpp-lite-6.33.5.so
 lib64/libreference-ril.so
 lib64/libregex.dylib.so
 lib64/libregex_syntax.dylib.so
@@ -668,10 +668,10 @@ vendor_dlkm/etc/kasan/init.insmod.frankel.cfg
 # Exclude overlays, symlinks and extra files that we override
 
 # Overlays
+overlay/CrossDeviceAccessServicePrimary__blazer__auto_generated_rro_vendor.apk
 overlay/DMService__blazer__auto_generated_rro_vendor.apk
 overlay/DeviceDiagnostics__blazer__auto_generated_rro_vendor.apk
 overlay/Flipendo__blazer__auto_generated_rro_vendor.apk
-overlay/PixelNfcOverlayCommon.apk
 overlay/SettingsGoogle__blazer__auto_generated_rro_vendor.apk
 overlay/SettingsProvider__blazer__auto_generated_rro_vendor.apk
 overlay/StorageManagerGoogle__blazer__auto_generated_rro_vendor.apk
@@ -681,6 +681,7 @@ overlay/Traceur__blazer__auto_generated_rro_vendor.apk
 overlay/framework-res__blazer__auto_generated_rro_vendor.apk
 
 # beta
+overlay/CrossDeviceAccessServicePrimary__blazer_beta__auto_generated_rro_vendor.apk
 overlay/DMService__blazer_beta__auto_generated_rro_vendor.apk
 overlay/DeviceDiagnostics__blazer_beta__auto_generated_rro_vendor.apk
 overlay/Flipendo__blazer_beta__auto_generated_rro_vendor.apk
@@ -692,6 +693,8 @@ overlay/TeleService__blazer_beta__auto_generated_rro_vendor.apk
 overlay/Traceur__blazer_beta__auto_generated_rro_vendor.apk
 overlay/framework-res__blazer_beta__auto_generated_rro_vendor.apk
 
+overlay/NfcOverlayBlazerGsi.apk
+overlay/PixelNfcOverlayCommon.apk
 overlay/UwbOverlayMT5/UwbOverlayMT5Gsi.apk
 
 # Symlinks
@@ -728,10 +731,14 @@ lib64/libtinyalsav2.so
 
 # Audio
 etc/audio/config/default_volume_tables.xml
+lib64/android.hardware.audio.common-V5-ndk.so
 lib64/android.hardware.audio.core-V4-ndk.so
-lib64/android.hardware.audio.core.sounddose-V3-ndk.so
-lib64/android.hardware.soundtrigger3-V3-ndk.so
-lib64/android.media.soundtrigger.types-V3-ndk.so
+lib64/android.hardware.audio.core.sounddose-V4-ndk.so
+lib64/android.hardware.audio.effect-V4-ndk.so
+lib64/android.hardware.soundtrigger3-V4-ndk.so
+lib64/android.media.audio.common.types-V5-ndk.so
+lib64/android.media.audio.eraser.types-V2-ndk.so
+lib64/android.media.soundtrigger.types-V4-ndk.so
 lib64/libaudioaidlranges.so
 lib64/libaudioroutev2.so
 lib64/libaudioserviceexampleimpl.so
@@ -740,8 +747,11 @@ lib64/libtinycompress.so
 
 # Bluetooth
 lib64/android.hardware.bluetooth-V1-ndk.so
+lib64/android.hardware.bluetooth.audio-V6-ndk.so
 lib64/android.hardware.bluetooth.finder-V1-ndk.so
-lib64/android.hardware.bluetooth.ranging-V1-ndk.so
+lib64/android.hardware.bluetooth.lmp_event-V1-ndk.so
+lib64/android.hardware.bluetooth.ranging-V2-ndk.so
+lib64/android.hardware.bluetooth.socket-V2-ndk.so
 lib64/hardware.google.bluetooth.bt_channel_avoidance@1.0.so
 
 # Camera
@@ -749,6 +759,7 @@ etc/sysconfig/vendor-apex-allowlist-lyric.xml
 
 # Charger
 etc/res/images/charger/battery_fail.png
+etc/res/images/charger/battery_overheat.png
 etc/res/images/charger/battery_scale.png
 etc/res/images/charger/main_font.png
 etc/res/values/charger/animation.txt
@@ -756,7 +767,7 @@ etc/res/values/charger/animation.txt
 # Codec2
 lib64/android.hardware.media.bufferpool2-V2-ndk.so
 lib64/android.hardware.media.bufferpool@2.0.so
-lib64/android.hardware.media.c2-V1-ndk.so
+lib64/android.hardware.media.c2-V2-ndk.so
 lib64/android.hardware.media.c2@1.0.so
 lib64/android.hardware.media.c2@1.1.so
 lib64/android.hardware.media.c2@1.2.so
@@ -765,7 +776,7 @@ lib64/android.hardware.media@1.0.so
 lib64/libavservices_minijail.so
 lib64/libcap.so
 lib64/libcodec2.so
-lib64/libcodec2_aidl.so
+lib64/libcodec2_aidl_V2.so
 lib64/libcodec2_aidl_noisurface.so
 lib64/libcodec2_hal_common.so
 lib64/libcodec2_hidl@1.0.so
@@ -784,7 +795,7 @@ lib64/libstagefright_xmlparser.so
 
 # Contexthub
 lib64/android.hardware.contexthub-V3-ndk.so
-lib64/android.hardware.contexthub-V4-ndk.so
+lib64/android.hardware.contexthub-V5-ndk.so
 lib64/chre_atoms_log.so
 lib64/chremetrics-cpp.so
 
@@ -815,6 +826,7 @@ lib64/libjson.so
 
 # Nos
 lib64/android.hardware.security.keymint-V3-ndk.so
+lib64/android.hardware.security.keymint-V5-ndk.so
 lib64/libcppbor.so
 lib64/libcppcose_rkp.so
 lib64/libkeymaster_messages.so
@@ -865,7 +877,7 @@ lib64/android.hardware.graphics.common-V7-ndk.so
 lib64/android.hardware.graphics.common@1.0.so
 lib64/android.hardware.graphics.common@1.1.so
 lib64/android.hardware.graphics.common@1.2.so
-lib64/android.hardware.graphics.composer3-V4-ndk.so
+lib64/android.hardware.graphics.composer3-V5-ndk.so
 lib64/android.hardware.graphics.composer@2.1-resources.so
 lib64/android.hardware.graphics.composer@2.1.so
 lib64/android.hardware.graphics.composer@2.2-resources.so
@@ -877,6 +889,7 @@ lib64/android.hardware.graphics.mapper@2.1.so
 lib64/android.hardware.graphics.mapper@3.0.so
 lib64/android.hardware.graphics.mapper@4.0.so
 lib64/android.hardware.health-V1-ndk.so
+lib64/android.hardware.health-V5-ndk.so
 lib64/android.hardware.input.common-V1-ndk.so
 lib64/android.hardware.input.processor-V1-ndk.so
 lib64/android.hardware.keymaster-V4-ndk.so
@@ -886,8 +899,10 @@ lib64/android.hardware.neuralnetworks@1.0.so
 lib64/android.hardware.neuralnetworks@1.1.so
 lib64/android.hardware.neuralnetworks@1.2.so
 lib64/android.hardware.neuralnetworks@1.3.so
+lib64/android.hardware.npu-V1-ndk.so
 lib64/android.hardware.oemlock-V1-ndk.so
 lib64/android.hardware.power-V2-ndk.so
+lib64/android.hardware.power-V7-ndk.so
 lib64/android.hardware.radio-V3-ndk.so
 lib64/android.hardware.radio.config-V3-ndk.so
 lib64/android.hardware.radio.config@1.0.so
@@ -909,15 +924,20 @@ lib64/android.hardware.radio@1.5.so
 lib64/android.hardware.radio@1.6.so
 lib64/android.hardware.security.rkp-V3-ndk.so
 lib64/android.hardware.security.sharedsecret-V1-ndk.so
+lib64/android.hardware.security.timestamp-V1-ndk.so
 lib64/android.hardware.thermal-V2-ndk.so
+lib64/android.hardware.usb-V4-ndk.so
+lib64/android.hardware.usb.flags-aconfig-cc-lib.so
+lib64/android.hardware.usb.gadget-V2-ndk.so
 lib64/android.hardware.vibrator-V3-ndk.so
-lib64/android.hardware.weaver-V2-ndk.so
+lib64/android.hardware.weaver-V3-ndk.so
 lib64/android.hidl.token@1.0-utils.so
 lib64/android.hidl.token@1.0.so
 lib64/com.google.hardware.pixel.display-V9-ndk.so
 lib64/com.google.hardware.pixel.display-V15-ndk.so
-lib64/com.google.hardware.pixel.display-V17-ndk.so
+lib64/com.google.hardware.pixel.display-V21-ndk.so
 lib64/hardware.google.ril_ext-V1-ndk.so
+lib64/pixel-power-ext-V2-ndk.so
 
 # Misc
 lib64/libdrm.so
@@ -932,7 +952,36 @@ framework/oat/arm64/com.google.android.camera.experimental2025.odex
 framework/oat/arm64/com.google.android.camera.experimental2025.vdex
 
 # Rust
+lib64/libaconfig_storage_file.dylib.so
+lib64/libaconfig_storage_protos.dylib.so
+lib64/libaconfig_storage_read_api.dylib.so
+lib64/libanstyle.dylib.so
+lib64/libanyhow.dylib.so
+lib64/libbionic_bindgen.dylib.so
+lib64/libbitflags.dylib.so
+lib64/libbytes.dylib.so
+lib64/libclap.dylib.so
+lib64/libclap_builder.dylib.so
+lib64/libclap_lex.dylib.so
+lib64/libcutils_bindgen.dylib.so
+lib64/libcxx.dylib.so
+lib64/libenv_logger.dylib.so
+lib64/libfoldhash.dylib.so
+lib64/liblazy_static.dylib.so
+lib64/liblibc.dylib.so
+lib64/liblogger.dylib.so
+lib64/libmemmap2.dylib.so
+lib64/libmemoffset.dylib.so
+lib64/libnix.dylib.so
+lib64/libprotobuf.dylib.so
+lib64/libprotobuf_support.dylib.so
 lib64/libregex_automata.dylib.so
+lib64/librustutils.dylib.so
+lib64/libserde.dylib.so
+lib64/libserde_core.dylib.so
+lib64/libstrsim.dylib.so
+lib64/libsystem_properties_bindgen_sys.dylib.so
+lib64/libthiserror.dylib.so
 
 # Completely skip files that are not required
 
