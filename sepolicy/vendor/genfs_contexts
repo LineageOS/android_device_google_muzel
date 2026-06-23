@@ -11,3 +11,15 @@ genfscon sysfs /devices/platform/53f1000.spmi/spmi-0/0-02/i2c-44/44-0071/referen
 genfscon sysfs /devices/platform/53f1000.spmi/spmi-0/0-02/i2c-44/44-0071/sensor0/latched_value u:object_r:sysfs_h2omg_val:s0
 genfscon sysfs /devices/platform/53f1000.spmi/spmi-0/0-02/i2c-44/44-0071/sensor1/latched_value u:object_r:sysfs_h2omg_val:s0
 genfscon sysfs /devices/platform/53f1000.spmi/spmi-0/0-02/i2c-44/44-0071/sensor2/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0070 u:object_r:sysfs_h2omg_dev:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0070/fuse/enable u:object_r:sysfs_h2omg_fuse:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0070/reference/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0070/sensor0/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0070/sensor1/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0070/sensor2/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0071 u:object_r:sysfs_h2omg_dev:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0071/fuse/enable u:object_r:sysfs_h2omg_fuse:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0071/reference/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0071/sensor0/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0071/sensor1/latched_value u:object_r:sysfs_h2omg_val:s0
+genfscon sysfs /devices/platform/ebf1000.spmi/spmi-0/0-02/i2c-24/24-0071/sensor2/latched_value u:object_r:sysfs_h2omg_val:s0
