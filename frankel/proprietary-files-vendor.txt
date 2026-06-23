@@ -22,6 +22,7 @@ vendor/bin/dump/dump_gsc.sh
 vendor/bin/dump/dump_interrupts_traces
 vendor/bin/dump/dump_iommu
 vendor/bin/dump/dump_mailbox
+vendor/bin/dump/dump_modem
 vendor/bin/dump/dump_modemlog
 vendor/bin/dump/dump_pcie.sh
 vendor/bin/dump/dump_perf
@@ -41,6 +42,7 @@ vendor/bin/gpuflag
 vendor/bin/hw/android.hardware.audio.service-aidl.aoc
 vendor/bin/hw/android.hardware.authsecret-service.citadel
 vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux
+vendor/bin/hw/android.hardware.boot-service.default-pixel
 vendor/bin/hw/android.hardware.composer.drm-hwc3-service
 vendor/bin/hw/android.hardware.contexthub-service.generic
 vendor/bin/hw/android.hardware.dumpstate.3-service
@@ -53,9 +55,11 @@ vendor/bin/hw/android.hardware.input.processor-service
 vendor/bin/hw/android.hardware.memtrack-service.pixel
 vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl
 vendor/bin/hw/android.hardware.oemlock-service.citadel
-vendor/bin/hw/android.hardware.power.stats-service.pixel;REQUIRED=pixel_powerstats_xml
+vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr
+vendor/bin/hw/android.hardware.power.stats-service.pixel
 vendor/bin/hw/android.hardware.secure_element-service.uicc
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
+vendor/bin/hw/android.hardware.thermal-service.pixel
 vendor/bin/hw/android.hardware.usb-service
 vendor/bin/hw/android.hardware.usb.gadget-service
 vendor/bin/hw/android.hardware.vibrator-service.cs40l26
@@ -98,10 +102,12 @@ vendor/bin/pixel_irq_load_balancer
 vendor/bin/pixelmd
 vendor/bin/pixelstats-vendor
 vendor/bin/rfsd
+vendor/bin/sendhint
 vendor/bin/shamp
 vendor/bin/shared_modem_platform
 vendor/bin/sscoredump
 vendor/bin/storage_init.sh
+vendor/bin/thermal_symlinks
 vendor/bin/trusty_metricsd
 vendor/bin/twoshay
 vendor/bin/usb_accessory_utils
@@ -339,6 +345,7 @@ vendor/etc/init.common.cfg
 vendor/etc/init/android.hardware.audio.service-aidl.aoc.rc
 vendor/etc/init/android.hardware.authsecret-service.citadel.rc
 vendor/etc/init/android.hardware.bluetooth-service.bcmbtlinux.rc
+vendor/etc/init/android.hardware.boot-service.default-pixel.rc
 vendor/etc/init/android.hardware.camera.provider@2.7-service-google-apex.rc
 vendor/etc/init/android.hardware.contexthub-service.generic.rc
 vendor/etc/init/android.hardware.dumpstate.3-service.rc
@@ -348,9 +355,11 @@ vendor/etc/init/android.hardware.health-service.laguna.rc
 vendor/etc/init/android.hardware.input.processor-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc
 vendor/etc/init/android.hardware.oemlock-service.citadel.rc
+vendor/etc/init/android.hardware.power-service.pixel-libperfmgr.rc
 vendor/etc/init/android.hardware.power.stats-service.pixel.rc
 vendor/etc/init/android.hardware.secure_element-service.uicc.rc
 vendor/etc/init/android.hardware.security.keymint-service.citadel.rc
+vendor/etc/init/android.hardware.thermal-service.pixel.rc
 vendor/etc/init/android.hardware.usb-service.rc
 vendor/etc/init/android.hardware.usb.gadget-service.rc
 vendor/etc/init/android.hardware.vibrator-service.cs40l26.rc
@@ -406,6 +415,7 @@ vendor/etc/init/pixel-bgtasks-experiment.rc
 vendor/etc/init/pixel-experiments-recovery.rc
 vendor/etc/init/pixel-gnss-default.rc
 vendor/etc/init/pixel-sched-proxy-exec-experiment.rc
+vendor/etc/init/pixel-thermal-symlinks.rc
 vendor/etc/init/pixel-zram-comp-algorithm-experiment.rc
 vendor/etc/init/pixel.gralloc.allocator-service.rc
 vendor/etc/init/pixelmd.rc
@@ -503,8 +513,11 @@ vendor/etc/vintf/manifest/android.hardware.gnss@lassen.xml
 vendor/etc/vintf/manifest/android.hardware.health-service.laguna.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
 vendor/etc/vintf/manifest/android.hardware.oemlock-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.power-service.pixel.xml
+vendor/etc/vintf/manifest/android.hardware.power.stats-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-v3.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharesecret-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml
 vendor/etc/vintf/manifest/android.hardware.usb-service.xml
 vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.xml
 vendor/etc/vintf/manifest/android.hardware.vibrator-service.cs40l26.xml
@@ -3336,6 +3349,7 @@ vendor/lib64/aconfig_ultrasonic_udfps_flags_c_lib.so
 vendor/lib64/android.hardware.authsecret-impl.nos.so
 vendor/lib64/android.hardware.oemlock-impl.nos.so
 vendor/lib64/android.hardware.power.stats-impl.laguna.so
+vendor/lib64/android.hardware.power.stats-impl.pixel.so
 vendor/lib64/android.hardware.security.keymint-impl.nos.so
 vendor/lib64/android.hardware.weaver-bridge.nos.so
 vendor/lib64/android.hardware.weaver-impl.nos.so
@@ -3384,6 +3398,7 @@ vendor/lib64/libdisplay_tflite.so
 vendor/lib64/libdisplayambience.so
 vendor/lib64/libdisplaycolor.so
 vendor/lib64/libdisplaypanel.so
+vendor/lib64/libdisppower-pixel.so
 vendor/lib64/libdump.so
 vendor/lib64/libedgetpu_client.google.so
 vendor/lib64/libedgetpu_litert.so
@@ -3425,6 +3440,9 @@ vendor/lib64/libmodem_svc_proto_legacy_soong.so
 vendor/lib64/libnos_citadeld_proxy.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liboemservice.so
+vendor/lib64/libperfmgr.so
+vendor/lib64/libpixelatoms_defs.so
+vendor/lib64/libpixelhealth.so
 vendor/lib64/libpixelstats.so
 vendor/lib64/libpixelstatsflags.so
 vendor/lib64/libqfp-service.so
@@ -3464,6 +3482,8 @@ vendor/lib64/modem_log_constants.so
 vendor/lib64/modem_log_dumper.so
 vendor/lib64/modem_ml_pw_rpc_gen.so
 vendor/lib64/modemml-tflite-service-aidl-V1-ndk.so
+vendor/lib64/pixel_stateresidency_provider_aidl_interface-ndk.so
+vendor/lib64/pixelatoms-cpp.so
 vendor/lib64/pixelstats_flags_c_lib.so
 vendor/lib64/sensors.usf.so
 vendor/lib64/soundfx/libspatialaudio.so
