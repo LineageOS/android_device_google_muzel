@@ -7,3 +7,4 @@ allow h2omg_vendor sysfs_batteryinfo:dir search;
 allow h2omg_vendor sysfs_h2omg_dev:dir search;
 allow h2omg_vendor sysfs_h2omg_drv:dir r_dir_perms;
 allow h2omg_vendor sysfs_h2omg_fuse:file rw_file_perms;
+allow h2omg_vendor vendor_toolbox_exec:file execute_no_trans;
