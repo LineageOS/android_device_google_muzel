@@ -5,10 +5,13 @@
 -->
 <resources>
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
-    <string name="config_dozeUdfpsLongPressSensorType">com.google.sensor.long_press</string>
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">com.google.sensor.long_press</string>
 
     <!-- Type of the quick pickup sensor. Empty if quick pickup is not supported. -->
-    <string name="config_quickPickupSensorType">com.google.sensor.quick_pickup</string>
+    <string name="config_quickPickupSensorType" translatable="false">com.google.sensor.quick_pickup</string>
+
+    <!-- If AOD can detect inactivity to power down the display to save power. -->
+    <bool name="config_dozeSupportsAodInactivityDetection">true</bool>
 
     <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>
