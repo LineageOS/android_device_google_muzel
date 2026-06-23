@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayVendorMustang \
     PixelDisplayServiceOverlayProductMustang \
     PixelNfcOverlayMustang \
-    PixelUwbOverlayRG5 \
+    PixelUwbOverlayMT5Muzel \
+    PixelUwbOverlayRG5Laguna \
     PixelWifiOverlay2025Mustang \
     SettingsMustangOverlay \
     SystemUIGoogleOverlayVendorMustang

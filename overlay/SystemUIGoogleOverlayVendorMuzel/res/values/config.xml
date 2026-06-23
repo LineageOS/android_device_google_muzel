@@ -7,6 +7,13 @@
     <!-- Whether to use deadzone with nav bar -->
     <bool name="config_useDeadZone">false</bool>
 
+    <!-- Override value to use for the doze activity sensor.  -->
+    <string name="doze_activity_sensor_type" translatable="false">com.google.sensor.prox_aad</string>
+
+    <!-- If using doze_activity_sensor_type, specifies a threshold value to distinguish active and
+         inactive break points. A sensor value less than this is considered "inactive". -->
+    <item name="doze_activity_sensor_threshold" format="float" type="dimen">5.0</item>
+
     <!-- The time (in ms) needed to trigger the device entry icon view's long-press affordance -->
     <integer name="config_lockIconLongPress">100</integer>
 </resources>

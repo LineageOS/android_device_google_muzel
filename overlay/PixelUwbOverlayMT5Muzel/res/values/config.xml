@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Returns whether an absolute UWB initiation time should be computed and configured for
+    CCC ranging session(s).
+    If disabled, a relative UWB initiation time (the value in CCCStartRangingParams), is
+    configured for the CCC ranging session. -->
+    <bool name="ccc_absolute_uwb_initiation_time_enabled">true</bool>
+</resources>
