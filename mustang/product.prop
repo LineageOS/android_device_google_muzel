@@ -3,5 +3,8 @@ bluetooth.device_id.product_id=16661
 persist.bluetooth.leaudio_sw_offload=true
 persist.vendor.audio.leaudio_sw_offload=true
 
+# Device family
+ro.build.device_family=FL5BZ5MT5RG5
+
 # Quick start
 ro.quick_start.device_id=mustang

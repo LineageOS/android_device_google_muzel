@@ -8,6 +8,12 @@ $(call inherit-product, device/google/muzel/device-mustang.mk)
 
 PRODUCT_NAME := aosp_mustang
 PRODUCT_DEVICE := mustang
-PRODUCT_MODEL := AOSP on mustang
-PRODUCT_BRAND := Android
+PRODUCT_MODEL := Pixel 10 Pro XL
+PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
+
+PRODUCT_NAME_FOR_ATTESTATION := mustang
+PRODUCT_DEVICE_FOR_ATTESTATION := mustang
+PRODUCT_MODEL_FOR_ATTESTATION := Pixel 10 Pro XL
+PRODUCT_BRAND_FOR_ATTESTATION := google
+PRODUCT_MANUFACTURER_FOR_ATTESTATION := Google

@@ -24,10 +24,11 @@ ro.lmk.swap_free_low_percentage=7
 ro.odm.build.media_performance_class=35
 
 # SurfaceFlinger
+debug.sf.productionize_readback_screenshot=1
 ro.surface_flinger.set_idle_timer_ms=1000
 
 # SVN
-ro.vendor.build.svn=29
+ro.vendor.build.svn=39
 
 # Touch
 ro.vendor.touch.gti0.resample_latency.enabled=true
@@ -43,3 +44,6 @@ ro.vendor.vibrator.hal.dvl.peq.coefficients=FF270,E007BB,100704,F0068C,1FF845,10
 ro.vendor.vibrator.hal.dvl.q.factor=3
 ro.vendor.vibrator.hal.loc.coeff=3.279
 vendor.audio.hapticgenerator.distortion.output.gain=0.48
+
+# Wi-Fi
+ro.vendor.wifi.model=bcm4383
