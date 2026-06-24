@@ -1,5 +1,8 @@
 # Bluetooth
 bluetooth.device_id.product_id=16663
 
+# Device family
+ro.build.device_family=FL5BZ5MT5RG5
+
 # Quick start
 ro.quick_start.device_id=frankel

@@ -8,6 +8,12 @@ $(call inherit-product, device/google/muzel/device-frankel.mk)
 
 PRODUCT_NAME := aosp_frankel
 PRODUCT_DEVICE := frankel
-PRODUCT_MODEL := AOSP on frankel
-PRODUCT_BRAND := Android
+PRODUCT_MODEL := Pixel 10
+PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
+
+PRODUCT_NAME_FOR_ATTESTATION := frankel
+PRODUCT_DEVICE_FOR_ATTESTATION := frankel
+PRODUCT_MODEL_FOR_ATTESTATION := Pixel 10
+PRODUCT_BRAND_FOR_ATTESTATION := google
+PRODUCT_MANUFACTURER_FOR_ATTESTATION := Google
