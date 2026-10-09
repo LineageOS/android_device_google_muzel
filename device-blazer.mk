@@ -33,8 +33,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayVendorBlazer \
     PixelDisplayServiceOverlayProductBlazer \
     PixelNfcOverlayBlazer \
-    PixelUwbOverlayMT5Muzel \
-    PixelUwbOverlayRG5Laguna \
+    PixelUwbOverlayRG5 \
     PixelWifiOverlay2025Blazer \
     SettingsBlazerOverlay \
     SystemUIGoogleOverlayVendorBlazer
