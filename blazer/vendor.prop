@@ -17,6 +17,7 @@ ro.vendor.primarydisplay.xrr.has_proximity_sensor=true
 ro.vendor.primarydisplay.xrr.version=2.1
 ro.vendor.primarydisplay.xrr.vrr_expected_present.headsup_ns=30000000
 ro.vendor.primarydisplay.xrr.vrr_expected_present.timeout_ns=500000000
+vendor.display.vsync.idle_sampling_interval_ms=600
 
 # Edge TPU
 vendor.google.silicon.enable_iif_for_isolated_app=1
@@ -32,11 +33,8 @@ ro.vendor.gps.atom.enabled=true
 # Media
 ro.odm.build.media_performance_class=35
 
-# SurfaceFlinger
-debug.sf.productionize_readback_screenshot=1
-
 # SVN
-ro.vendor.build.svn=45
+ro.vendor.build.svn=47
 
 # Touch
 ro.vendor.touch.gti0.resample_latency.enabled=true
