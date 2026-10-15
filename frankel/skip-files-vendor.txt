@@ -363,6 +363,7 @@ etc/vintf/manifest/nfc-service-default.xml
 etc/wifi/wpa_supplicant.conf
 lib64/android.frameworks.stats-V1-ndk.so
 lib64/android.frameworks.stats-V2-ndk.so
+lib64/android.frameworks.stats-V3-ndk.so
 lib64/android.hardware.boot-V1-ndk.so
 lib64/android.hardware.boot@1.0.so
 lib64/android.hardware.boot@1.1.so
@@ -637,6 +638,9 @@ lib64/nos_app_avb.so
 lib64/nos_app_keymaster.so
 lib64/nos_app_weaver.so
 
+# Permissions
+etc/permissions/android.software.aiseal.prebuilt.xml
+
 # Radio
 lib64/libnetutils.so
 lib64/libsqlite.so
@@ -719,7 +723,7 @@ lib64/android.hardware.usb.gadget-V2-ndk.so
 lib64/android.hardware.vibrator-V3-ndk.so
 lib64/android.hardware.weaver-V3-ndk.so
 lib64/com.google.hardware.pixel.display-V15-ndk.so
-lib64/com.google.hardware.pixel.display-V21-ndk.so
+lib64/com.google.hardware.pixel.display-V23-ndk.so
 lib64/hardware.google.ril_ext-V1-ndk.so
 lib64/pixel-power-ext-V2-ndk.so
 
@@ -728,6 +732,7 @@ lib64/libdrm.so
 lib64/libevent.so
 lib64/libgralloctypes.so
 lib64/libion.so
+lib64/libperfetto_c.so
 lib64/libui.so
 lib64/libutilscallstack.so
 
@@ -743,10 +748,12 @@ lib64/libanstyle.dylib.so
 lib64/libanyhow.dylib.so
 lib64/libbionic_bindgen.dylib.so
 lib64/libbitflags.dylib.so
+lib64/libbyteorder.dylib.so
 lib64/libbytes.dylib.so
 lib64/libclap.dylib.so
 lib64/libclap_builder.dylib.so
 lib64/libclap_lex.dylib.so
+lib64/libcommand_fds.dylib.so
 lib64/libcutils_bindgen.dylib.so
 lib64/libcxx.dylib.so
 lib64/libenv_logger.dylib.so
@@ -756,6 +763,7 @@ lib64/liblibc.dylib.so
 lib64/liblogger.dylib.so
 lib64/libmemmap2.dylib.so
 lib64/libmemoffset.dylib.so
+lib64/libneli.dylib.so
 lib64/libnix.dylib.so
 lib64/libprotobuf.dylib.so
 lib64/libprotobuf_support.dylib.so
