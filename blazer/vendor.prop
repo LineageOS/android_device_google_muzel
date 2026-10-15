@@ -34,7 +34,7 @@ ro.vendor.gps.atom.enabled=true
 ro.odm.build.media_performance_class=35
 
 # SVN
-ro.vendor.build.svn=47
+ro.vendor.build.svn=48
 
 # Touch
 ro.vendor.touch.gti0.resample_latency.enabled=true
