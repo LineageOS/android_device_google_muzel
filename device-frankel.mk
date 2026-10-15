@@ -18,6 +18,10 @@ endif
 # Inherit from laguna
 include device/google/laguna/common.mk
 
+# Audio
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/config/default_volume_tables.xml
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayProductMuzel \
