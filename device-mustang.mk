@@ -74,6 +74,3 @@ $(call soong_config_set,threadnetwork_apex,init_rc_namespace,device/google/muzel
 # VINTF
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/device_framework_matrix_product.xml
-
-# Window extensions
-$(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
