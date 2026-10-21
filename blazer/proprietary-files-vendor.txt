@@ -22,7 +22,6 @@ vendor/bin/dump/dump_gsc.sh
 vendor/bin/dump/dump_interrupts_traces
 vendor/bin/dump/dump_iommu
 vendor/bin/dump/dump_mailbox
-vendor/bin/dump/dump_modem
 vendor/bin/dump/dump_modemlog
 vendor/bin/dump/dump_pcie.sh
 vendor/bin/dump/dump_perf
@@ -37,9 +36,7 @@ vendor/bin/dump/dump_thermal.sh
 vendor/bin/dump/dump_tpu
 vendor/bin/dump/dump_trusty.sh
 vendor/bin/dump/dump_uwb
-vendor/bin/fwtp_tool
 vendor/bin/gia
-vendor/bin/gpuflag
 vendor/bin/hw/android.hardware.audio.service-aidl.aoc
 vendor/bin/hw/android.hardware.authsecret-service.citadel
 vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux
@@ -88,7 +85,6 @@ vendor/bin/hw/vendor.google.ambience_hub-service
 vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service
 vendor/bin/hw/vendor.google.google_battery-service
 vendor/bin/hw/vendor.google.google_battery.ekf.service
-vendor/bin/hw/vendor.google.mte_launcher
 vendor/bin/hw/vendor.google.plat_security-service
 vendor/bin/hw/vendor.google.radioext@1.0-service
 vendor/bin/hw/vendor.google.wireless_charger-default
@@ -102,7 +98,6 @@ vendor/bin/modem_ml_svc_sit
 vendor/bin/pcie_power_control
 vendor/bin/pixel-experiments-recovery.sh
 vendor/bin/pixel_irq_load_balancer
-vendor/bin/pixelmd
 vendor/bin/pixelstats-vendor
 vendor/bin/rfsd
 vendor/bin/sendhint

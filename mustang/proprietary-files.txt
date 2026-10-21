@@ -242,3 +242,10 @@ recovery/system/etc/vintf/manifest/android.hardware.health-service.laguna.xml:re
 # USB firmware
 recovery/lib/firmware/usb_phy_fw.bin
 recovery/lib/firmware/usb_phy_fw_2.27.0.bin
+
+# Rust - from CP2A.260805.005
+vendor/bin/dump/dump_modem|126ba65ea84c3fee868611f527aaed2312e4b2ad
+vendor/bin/fwtp_tool|b85a341e1bdd5fab1aa339580f926f52a20fa246
+vendor/bin/gpuflag|7f1689f909dbc423b49f56b4192c5b2bb5501851
+vendor/bin/hw/vendor.google.mte_launcher|f9cdf2e9ce61e0a4018429a6541e6d4574d77c36
+vendor/bin/pixelmd|dc99dd279af5a75bbe1618dfc9750905755496eb
