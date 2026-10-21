@@ -743,6 +743,11 @@ framework/oat/arm64/com.google.android.camera.experimental2025.odex
 framework/oat/arm64/com.google.android.camera.experimental2025.vdex
 
 # Rust
+bin/dump/dump_modem
+bin/fwtp_tool
+bin/gpuflag
+bin/hw/vendor.google.mte_launcher
+bin/pixelmd
 lib64/libaconfig_storage_file.dylib.so
 lib64/libaconfig_storage_protos.dylib.so
 lib64/libaconfig_storage_read_api.dylib.so
