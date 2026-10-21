@@ -3413,10 +3413,16 @@ vendor/lib64/lib_reader.so
 vendor/lib64/lib_vendor_gsc_atoms.so
 vendor/lib64/libaconfig_mte_launcher_flags_rust.dylib.so
 vendor/lib64/libalertv3.so
+vendor/lib64/libandroid_logger.dylib.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libanstyle.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libaoc.so
+vendor/lib64/libbitflags.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libc2filterplugin.so
+vendor/lib64/libclap_builder.dylib.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libclap_lex.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/libcodec2_store_dolby.so
+vendor/lib64/libcommand_fds.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libcustomer_gralloc_ddk_api.so
 vendor/lib64/libcustomgnss.so
 vendor/lib64/libdarwinn_hal.so
@@ -3431,6 +3437,7 @@ vendor/lib64/libedgetpu_litert.so
 vendor/lib64/libedgetpu_tachyon.google.so
 vendor/lib64/libedgetpu_tflite_compiler.so
 vendor/lib64/libedgetpu_util.so
+vendor/lib64/libenv_filter.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libfvsam_prm_parser.so
 vendor/lib64/libgc2_av1_dec.so
 vendor/lib64/libgc2_av1_enc.so
@@ -3458,11 +3465,14 @@ vendor/lib64/libhwc_flags.so
 vendor/lib64/libhwc_xrr_flags.so
 vendor/lib64/libhwjpeg.so
 vendor/lib64/libion_google.so
+vendor/lib64/liblog_rust.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libmahalcontroller.so
 vendor/lib64/libmemtrack-pixel.so
 vendor/lib64/libmetrics_logger.so
 vendor/lib64/libmodem_ml_svc_proto.so
 vendor/lib64/libmodem_svc_proto_legacy_soong.so
+vendor/lib64/libneli.dylib.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libnix.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libnos_citadeld_proxy.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liboemservice.so
@@ -3480,6 +3490,7 @@ vendor/lib64/libril-aidl.so
 vendor/lib64/libril_gfeature.so
 vendor/lib64/libril_sitril.so
 vendor/lib64/librtxproto_aidl-default.so
+vendor/lib64/librustutils.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libsensorsuez.so
 vendor/lib64/libsighandler.so
 vendor/lib64/libsit_oem.so
@@ -3491,7 +3502,9 @@ vendor/lib64/libsitril-ims.so
 vendor/lib64/libsitril.so
 vendor/lib64/libspeechenhancer.so
 vendor/lib64/libsrv_um.so
+vendor/lib64/libstd.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libstreset25.so
+vendor/lib64/libstrsim.dylib.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libsueznanoappclients.so
 vendor/lib64/libtachyon_core.so
 vendor/lib64/libtachyon_dsp_core.so

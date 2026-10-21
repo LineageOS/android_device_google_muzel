@@ -36,6 +36,23 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
 
 
+vendor_rust_libs = [
+    'libandroid_logger',
+    'libanstyle',
+    'libbitflags',
+    'libclap_builder',
+    'libclap_lex',
+    'libcommand_fds',
+    'libenv_filter',
+    'liblog_rust',
+    'libneli',
+    'libnix',
+    'librustutils',
+    'libstd',
+    'libstrsim',
+]
+
+
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
@@ -43,6 +60,7 @@ lib_fixups: lib_fixups_user_type = {
         'com.google.edgetpu_vendor_service-V2-ndk',
         'vendor.google.whitechapel.audio.audioext@4.0',
         'vendor.google.whitechapel.audio.extension-V8-ndk',
+        *vendor_rust_libs,
     ): lib_fixup_vendor_suffix,
 }
 
@@ -88,6 +106,7 @@ def fix_vendor_file_list(file_list: FileList):
         'vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so',
         'vendor/lib64/vendor.google.whitechapel.audio.audioext@4.0.so',
         'vendor/lib64/vendor.google.whitechapel.audio.extension-V8-ndk.so',
+        *[f'vendor/lib64/{lib}.dylib.so' for lib in vendor_rust_libs],
     ]
 
     for file_path in module_suffix_file_paths:

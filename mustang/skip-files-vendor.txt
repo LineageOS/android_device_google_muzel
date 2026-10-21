@@ -410,7 +410,6 @@ lib64/libOpenCL.so
 lib64/libaconfig_storage_read_api_cc.so
 lib64/libaho_corasick.dylib.so
 lib64/libandroid_log_sys.dylib.so
-lib64/libandroid_logger.dylib.so
 lib64/libaudio_aidl_conversion_common_ndk.so
 lib64/libaudioaidlcommon.so
 lib64/libaudioutils.so
@@ -424,7 +423,6 @@ lib64/libcutils.so
 lib64/libdmabufheap.so
 lib64/libeffects.so
 lib64/libeffectsconfig.so
-lib64/libenv_filter.dylib.so
 lib64/libext2_uuid.so
 lib64/libfmq.so
 lib64/libgatekeeper.so
@@ -433,7 +431,6 @@ lib64/libhardware_legacy.so
 lib64/libhidlbase.so
 lib64/libjsoncpp.so
 lib64/libkeystore-engine-wifi-hidl.so
-lib64/liblog_rust.dylib.so
 lib64/libmedia_helper.so
 lib64/libmemchr.dylib.so
 lib64/libnl.so
@@ -452,7 +449,6 @@ lib64/libsparse.so
 lib64/libspeexresampler.so
 lib64/libssl.so
 lib64/libstagefright_foundation.so
-lib64/libstd.dylib.so
 lib64/libtinyxml2.so
 lib64/libtrusty.so
 lib64/libutils.so
@@ -746,16 +742,11 @@ framework/oat/arm64/com.google.android.camera.experimental2025.vdex
 lib64/libaconfig_storage_file.dylib.so
 lib64/libaconfig_storage_protos.dylib.so
 lib64/libaconfig_storage_read_api.dylib.so
-lib64/libanstyle.dylib.so
 lib64/libanyhow.dylib.so
 lib64/libbionic_bindgen.dylib.so
-lib64/libbitflags.dylib.so
 lib64/libbyteorder.dylib.so
 lib64/libbytes.dylib.so
 lib64/libclap.dylib.so
-lib64/libclap_builder.dylib.so
-lib64/libclap_lex.dylib.so
-lib64/libcommand_fds.dylib.so
 lib64/libcutils_bindgen.dylib.so
 lib64/libcxx.dylib.so
 lib64/libenv_logger.dylib.so
@@ -765,15 +756,11 @@ lib64/liblibc.dylib.so
 lib64/liblogger.dylib.so
 lib64/libmemmap2.dylib.so
 lib64/libmemoffset.dylib.so
-lib64/libneli.dylib.so
-lib64/libnix.dylib.so
 lib64/libprotobuf.dylib.so
 lib64/libprotobuf_support.dylib.so
 lib64/libregex_automata.dylib.so
-lib64/librustutils.dylib.so
 lib64/libserde.dylib.so
 lib64/libserde_core.dylib.so
-lib64/libstrsim.dylib.so
 lib64/libsystem_properties_bindgen_sys.dylib.so
 lib64/libthiserror.dylib.so
 
