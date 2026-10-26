@@ -1,2 +1,3 @@
 on init
    insmod /lib/modules/focal_touch.ko
+   insmod /lib/modules/syna_touch.ko
